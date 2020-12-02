@@ -1,0 +1,127 @@
+.skills {
+  margin: 0 6rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-areas: "image text";
+}
+
+.card_img {
+  width: 80%;
+}
+
+.skills_img_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills_header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.skills_sub_header {
+  font-size: 28px;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.html_css,
+.react,
+.bootstrap,
+.sass,
+.firebase,
+.github {
+  margin-bottom: 2rem;
+  filter: blur(4px);
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    filter: blur(0px);
+    transform: scale(1.2);
+  }
+}
+
+.skills_vector_section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 767.98px) {
+  .skills {
+    margin: 0 0.2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "image";
+
+    .skills_img_section {
+      grid-area: image;
+    }
+    
+    .skills_vector_section {
+      display: none;
+    }
+  }
+
+  .card_img {
+    width: 100%;
+  }
+
+  .skills_img_section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills_header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .skills_sub_header {
+    font-size: 28px;
+  }
+
+  .text-right {
+    text-align: left !important;
+  }
+
+  .html_css,
+  .react,
+  .bootstrap,
+  .sass,
+  .firebase,
+  .github {
+    margin-bottom: 2rem;
+    filter: blur(4px);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: blur(0px);
+      transform: scale(1.2);
+    }
+  }
+
+  .skills_vector_section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

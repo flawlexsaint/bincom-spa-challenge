@@ -1,0 +1,86 @@
+.banner {
+  margin: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: "text image";
+}
+
+.banner_text {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+}
+
+.banner_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_img {
+  width: 100%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  box-shadow: 2px 2px 5px 2px (gray);
+}
+
+.banner_header {
+  font-size: 4rem;
+}
+
+.banner_text {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.email,
+.phone {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+// Small devices (portrait phones, less than 576px)
+@media (max-width: 767.98px) {
+  .banner {
+    margin: 0.4rem 0.2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+
+  .banner_text {
+    grid-area: text;
+  }
+
+  .banner_image {
+    grid-area: image;
+  }
+
+  .banner_img {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 2px 2px 5px 2px (gray);
+  }
+
+  .banner_text {
+    text-align: center;
+  }
+
+  .email,
+  .phone {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

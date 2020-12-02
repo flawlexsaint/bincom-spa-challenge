@@ -1,0 +1,144 @@
+.skills {
+  margin: 0 6rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: 1fr 0.6fr;
+      grid-template-columns: 1fr 0.6fr;
+      grid-template-areas: "image text";
+}
+
+.card_img {
+  width: 80%;
+}
+
+.skills_img_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills_header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.skills_sub_header {
+  font-size: 28px;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.html_css,
+.react,
+.bootstrap,
+.sass,
+.firebase,
+.github {
+  margin-bottom: 2rem;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.html_css:hover,
+.react:hover,
+.bootstrap:hover,
+.sass:hover,
+.firebase:hover,
+.github:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.skills_vector_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  .skills {
+    margin: 0 0.2rem;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image";
+  }
+  .skills .skills_img_section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .skills .skills_vector_section {
+    display: none;
+  }
+  .card_img {
+    width: 100%;
+  }
+  .skills_img_section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .skills_header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .skills_sub_header {
+    font-size: 28px;
+  }
+  .text-right {
+    text-align: left !important;
+  }
+  .html_css,
+  .react,
+  .bootstrap,
+  .sass,
+  .firebase,
+  .github {
+    margin-bottom: 2rem;
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .html_css:hover,
+  .react:hover,
+  .bootstrap:hover,
+  .sass:hover,
+  .firebase:hover,
+  .github:hover {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .skills_vector_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=Skills.css.map */

@@ -1,0 +1,24 @@
+@font-face {
+  src: url("./Components/font/Trebuchet_MS.ttf");
+  font-family: Trebuchet MS;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.main_wrapper {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
